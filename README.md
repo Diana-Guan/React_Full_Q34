@@ -1,7 +1,7 @@
 # React Full Q34
 
 ## Purpose
-This repository contains a React-based preview of the full Q34 solution. The goal of the project is to render the LaTeX work in a web interface, preserve more of the step-by-step structure, and experiment with interactions such as highlighted references and arrow-based visual explanations that are difficult to reproduce cleanly in static LaTeX.
+This repository contains a React version of the full Q34 solution. The goal is to present the full Q34 work in React rather than only in LaTeX.
 
 ## Project Structure
 - `src/App.jsx`: application entry point
@@ -26,7 +26,4 @@ npm run dev
 Then open the local URL shown in the terminal, usually:
 
 `http://localhost:5173`
-
-## Conclusion
-This repository explores how a full LaTeX solution can be previewed in React while keeping more of the structure, visual cues, and interactive explanation style than a plain PDF or raw LaTeX rendering.
 
