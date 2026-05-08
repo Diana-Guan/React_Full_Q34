@@ -12,9 +12,9 @@ This repository contains a React version of the full Q34 solution. The goal is t
 - `.github/workflows/deploy.yml`: GitHub Pages deployment workflow
 
 ## How to Use
-If GitHub Pages is enabled for this repository, the deployed preview can be accessed here:
+You can access the deployed preview here:
 
-`https://diana-guan.github.io/React_Full_Q34/`
+[React Full Q34](https://diana-guan.github.io/React_Full_Q34/)
 
 To run the project locally:
 
@@ -23,7 +23,5 @@ npm install
 npm run dev
 ```
 
-Then open the local URL shown in the terminal, usually:
-
-`http://localhost:5173`
+Then open the local URL shown in the terminal
 
