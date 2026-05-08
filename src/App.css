@@ -1,0 +1,285 @@
+.latex-page {
+  min-height: 100vh;
+  padding: 40px 24px 72px;
+  background:
+    radial-gradient(circle at top left, rgba(198, 221, 255, 0.75), transparent 30%),
+    linear-gradient(180deg, #fcfbf7 0%, #f2eadc 100%);
+}
+
+.latex-card {
+  width: min(860px, 100%);
+  margin: 0 auto;
+  padding: 36px 32px;
+  text-align: left;
+  border: 1px solid #dbcdb7;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 18px 48px rgba(77, 57, 24, 0.08);
+}
+
+.question-card,
+.solution-card {
+  width: min(860px, 100%);
+  margin: 0 auto;
+  text-align: left;
+}
+
+.question-card {
+  padding: 32px;
+}
+
+.framed-card {
+  border: 1px solid #dbcdb7;
+  border-radius: 28px;
+  background: rgba(255, 252, 245, 0.9);
+  box-shadow: 0 18px 48px rgba(77, 57, 24, 0.08);
+}
+
+.question-card h2 {
+  margin: 0 0 18px;
+  font-size: 2rem;
+}
+
+.question-body p {
+  margin: 0;
+}
+
+.choice-list {
+  margin: 18px 0 0;
+  padding-left: 26px;
+}
+
+.choice-list li + li {
+  margin-top: 12px;
+}
+
+.solution-card {
+  margin-top: 24px;
+  padding: 18px;
+  border: 1px solid #74a6d6;
+  border-radius: 22px;
+  background: linear-gradient(180deg, rgba(231, 244, 255, 0.95), rgba(244, 250, 255, 0.95));
+  box-shadow: 0 18px 48px rgba(55, 99, 147, 0.12);
+}
+
+.solution-banner {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 12px;
+  padding: 10px 14px;
+  border: 1px solid #5f90c5;
+  border-radius: 14px;
+  background: rgba(185, 222, 255, 0.65);
+  color: #123a66;
+  font-weight: 700;
+}
+
+.solution-summary {
+  padding: 8px 4px 2px;
+}
+
+.solution-summary p {
+  margin: 0 0 14px;
+}
+
+.step-group + .step-group {
+  margin-top: 14px;
+}
+
+.step-bubble {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border: 1px solid #7e7e7e;
+  border-radius: 14px;
+  background: #f8f8f8;
+  color: #232323;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.7);
+}
+
+.step-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  border-radius: 999px;
+  background: #e4e4e4;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.substep-list {
+  display: grid;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.substep-card {
+  display: grid;
+  grid-template-columns: minmax(140px, 190px) 1fr;
+  gap: 16px;
+  padding: 16px;
+  border: 1px solid #7e7e7e;
+  border-radius: 14px;
+  background: #fafafa;
+}
+
+.substep-heading {
+  display: grid;
+  align-content: start;
+  gap: 8px;
+}
+
+.substep-number {
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  font-size: 0.84rem;
+  font-weight: 700;
+  color: #4b4b4b;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.substep-heading h4 {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.35;
+  letter-spacing: normal;
+  text-transform: none;
+  color: #1f1f1f;
+}
+
+.substep-content p {
+  margin: 0;
+}
+
+.substep-content p + p,
+.substep-content p + .math-block,
+.substep-content .math-block + p,
+.substep-content .math-block + .math-block {
+  margin-top: 12px;
+}
+
+.math-block {
+  overflow-x: auto;
+  padding: 8px 4px;
+}
+
+.math-with-arrows {
+  position: relative;
+  overflow: visible;
+  padding-top: 34px;
+}
+
+.math-with-arrows mjx-container {
+  position: relative;
+  z-index: 1;
+}
+
+.math-with-arrows .arrow-anchor {
+  background: #fff1a8;
+  border-radius: 4px;
+  box-shadow: 0 0 0 2px #fff1a8;
+}
+
+.equation-arrow-layer {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.equation-arrow {
+  fill: none;
+  stroke: #2e2e2e;
+  stroke-width: 1.35;
+  stroke-linecap: round;
+}
+
+#equation-arrowhead path {
+  fill: #2e2e2e;
+}
+
+.latex-card h2,
+.latex-card h3,
+.latex-card h4 {
+  margin: 0;
+  color: #23170d;
+}
+
+.latex-card h2 {
+  margin-top: 16px;
+  font-size: 1.9rem;
+}
+
+.latex-card h3 {
+  margin-top: 28px;
+  font-size: 1.3rem;
+}
+
+.latex-card h4 {
+  margin-top: 22px;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #80562b;
+}
+
+.latex-card p,
+.latex-card li {
+  color: #40352d;
+}
+
+.latex-card p + p,
+.latex-card p + ol,
+.latex-card h2 + p,
+.latex-card h3 + p,
+.latex-card h4 + p,
+.latex-card pre + p,
+.latex-card ol + p {
+  margin-top: 14px;
+}
+
+.latex-card ol {
+  margin: 14px 0;
+  padding-left: 24px;
+}
+
+.latex-card li + li {
+  margin-top: 10px;
+}
+
+.latex-card pre {
+  overflow-x: auto;
+  margin: 16px 0;
+  padding: 14px 16px;
+  font: 0.95rem/1.55 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  color: #2b231b;
+  background: #f6efe1;
+  border: 1px solid #e2d6c2;
+  border-radius: 18px;
+}
+
+@media (max-width: 720px) {
+  .latex-page {
+    padding-inline: 16px;
+  }
+
+  .latex-card,
+  .framed-card {
+    padding: 24px 20px;
+    border-radius: 22px;
+  }
+
+  .substep-card {
+    grid-template-columns: 1fr;
+  }
+}
